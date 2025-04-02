@@ -36,7 +36,7 @@ userRoute.post('/login',async(req,res)=>{
            }
            })
         }else{
-            res.send({msg:'user not found'})
+          res.send({msg:'user not found'}) 
         }
     } catch (error) {
        res.status(500).send({msg:"server error"})
